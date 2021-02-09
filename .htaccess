@@ -1,0 +1,13 @@
+
+RewriteEngine on
+RewriteCond %{HTTP_HOST} ^pasajero\.tk$ [OR]
+RewriteCond %{HTTP_HOST} ^www\.pasajero\.tk$
+RewriteRule ^/?$ "https\:\/\/pasajero\.tk\/formulario\.php" [R=301,L]
+RewriteCond %{HTTP_HOST} ^hotelchavin\.pasajero\.tk$
+RewriteRule ^/?$ "http\:\/\/hotelchavin\.pasajero\.tk\/formulario\.php" [R=301,L]
+RewriteCond %{HTTP_HOST} ^hotelarcangel\.pasajero\.tk$
+RewriteRule ^/?$ "http\:\/\/hotelarcangel\.pasajero\.tk\/formulario\.php" [R=301,L]
+RewriteCond %{HTTP_HOST} ^envios\.idra\.pe$ [OR]
+RewriteCond %{HTTP_HOST} ^www\.envios\.idra\.pe$
+RewriteRule ^/?$ "https\:\/\/envios\.idra\.pe\/formulario\.php" [R=301,L]
+
