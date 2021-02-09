@@ -17,13 +17,14 @@ if($_POST['dequien']=="1"){
 	$vquien='Karen Leon';
 }else if($_POST['dequien']=="2"){
 	$vquien='Alberto Maguiña';
-}else if($_POST['dequien']=="3"){
+}else if($_POST['dequien']=="7"){
 	$vquien='Jesus Vera';
-}else if($_POST['dequien']=="4"){
-	$vquien='IDRA - Capacitaciones';
 }else if($_POST['dequien']=="5"){
+	$vquien='IDRA - Capacitaciones';
+}else if($_POST['dequien']=="8"){
 	$vquien='Samantha Salazar';
 }
+
 $sipago='';
 if($_POST['pagorealizado']=="1"){
 $sipago='si';

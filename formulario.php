@@ -298,10 +298,7 @@
                                                 <option value="0">Seleccione un vendedor</option>
                                                         <option value="1">Karen Leon</option>
                                                         <option value="2">Alberto Maguiña</option>
-                                                        <option value="3">Cesar Canales</option>
-                                                        <option value="4">Billy Joel</option>
                                                         <option value="5">IDRA Capacitaciones</option>
-                                                        <option value="6">Dr.Gustavo Reyes</option>
                                                         <option value="7">Jesus Vera</option>
                                                         <option value="8">Samantha Salazar</option>
                                                 </select>
