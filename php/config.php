@@ -1,8 +1,7 @@
 <?php
-$host   = 'localhost';
+$host   = 'idra.pe';
 $port   = '3306';
-$dbname = 'gasto';
-$user   = 'root';
-$passwd = 'root';
-
+$dbname = 'idrapex1_gastos';
+$user   = 'idrapex1_gasto';
+$passwd = '1a2b3c++2020';
 ?>
