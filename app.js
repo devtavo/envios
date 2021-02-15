@@ -197,6 +197,7 @@
         var montopagado = document.getElementById("montopagado").value;
         var observaciones = document.getElementById("observaciones").value;
 
+
         var data = {};
         data.nombre = nombre;
         data.ruc = ruc;
@@ -220,6 +221,7 @@
         data.fechapago = fechapago;
         data.montopagado = montopagado;
         data.observaciones = observaciones;
+
 
         data.class = 'EnviosController'
         data.method = 'create'

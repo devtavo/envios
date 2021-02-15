@@ -24,7 +24,7 @@ class EnviosController
 	function create($params){
 		$pg = new MySql();
 		// var_dump($params);
-	   return $pg->getRow("insert into envios(nombres,dni,telefono,direccion,correo,distrito,provincia,departamento,referencia,dequien,estado,pagorealizado,fechapago,montopagado,observaciones,fechaenvio) 
+	   return $pg->getRow("insert into envios(nombres,dni,telefono,direccion,correo,distrito,provincia,departamento,referencia,dequien,estado,pagorealizado,fechapago,montopagado,observaciones,numerotrack,fechaenvio) 
 	   values('".$params->nombrer."',
 	   			'".$params->rucr."',
 				 '".$params->telefonor."',
@@ -40,6 +40,7 @@ class EnviosController
 				 '".$params->fechapago."',
 				 '".$params->montopagado."',
 				 '".$params->observaciones."',
+				 '".$params->numerotrack."',
 				 now()) ");
 
 	}
@@ -48,7 +49,7 @@ class EnviosController
 		$pg = new MySql();
 		// return "update envios set estado='".$params->estado."' where id_envios='".$params->id_envios."' ";
 
-		$pg->getRow("update envios set estado=$params->estado where id_envios=$params->id_envios; ");
+		$pg->getRow("update envios set estado=$params->estado, nrotrack=$params->numerotrack where id_envios=$params->id_envios; ");
 		return "0";
 	}
 	

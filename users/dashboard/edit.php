@@ -144,10 +144,16 @@ if (count($_GET) > 0) {
                                                     <input class="input form-control input-sm" type="text" name="fecharegistro" id="fecharegistro" placeholder="" value="<?php echo $fs_incidente->fechapago; ?>" disabled>
                                                 </div>
                                             </div>
-                                            <div class="col-lg-4">
+                                            <div class="col-lg-2">
                                                 <div class="form-group">
                                                     <label>Monto del pago</label>
                                                     <input class="input form-control input-sm" type="text" name="montopagado" id="montopagado" placeholder="" value="<?php echo $fs_incidente->montopagado; ?>" disabled>
+                                                </div>
+                                            </div>
+                                            <div class="col-lg-2">
+                                                <div class="form-group">
+                                                    <label>N° Tracking</label>
+                                                    <input class="input form-control input-sm" type="text" name="numerotrack" id="numerotrack" placeholder="" value="<?php echo $fs_incidente->nrotrack; ?>" >
                                                 </div>
                                             </div>
                                         </div>
@@ -161,7 +167,7 @@ if (count($_GET) > 0) {
                                             <div class="col-lg-8">
                                                 <div class="form-group">
                                                     <label>Detalle y/o observaciones</label>
-                                                    <textarea class="input form-control input-sm" type="text" rows="5" name="observaciones" id="observaciones" placeholder="" value="<?php echo $fs_incidente->observaciones; ?>" disabled></textarea>
+                                                    <textarea class="input form-control input-sm" type="text" rows="5" name="observaciones" id="observaciones" placeholder="" value="" disabled><?php echo $fs_incidente->observaciones; ?></textarea>
                                                 </div>
                                             </div>
                                             <div class="col-lg-4">

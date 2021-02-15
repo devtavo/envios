@@ -47,8 +47,10 @@ var AppEditIncidente = function() {
         $('[name="guardaenvio"]').click(function() {
             var estado = document.getElementById("ddlestado").value;
             var id_envios = document.getElementById("id_envios").value;
+            var numerotrack = document.getElementById("numerotrack").value;
 
-            fu_envio(estado, id_envios);
+
+            fu_envio(estado, id_envios, numerotrack);
         });
 
         form.validator().on('submit', function(e) {
@@ -85,13 +87,14 @@ var AppEditIncidente = function() {
             }
         });
     }
-    var fu_envio = function(estado, id_envios) {
+    var fu_envio = function(estado, id_envios, numerotrack) {
         var data = {};
 
         data.class = 'EnviosController';
         data.method = 'update';
         data.estado = estado;
         data.id_envios = id_envios;
+        data.numerotrack = numerotrack;
         $.ajax({
             url: path_ws,
             type: 'post',

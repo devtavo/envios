@@ -58,7 +58,7 @@ $mpdf->AddPage();
 $mpdf->SetHTMLFooter(pdf_footer());
 $mpdf->WriteHTML(pdf_body($vquien,$sipago));
 $mpdf->Output('./Reportes.pdf', 'F');
-// $mpdf->Output('./Reportes.pdf', 'D');
+$mpdf->Output('./Reportes.pdf', 'D');
 //$mpdf->Output();
 
 function pdf_header($incidencia_id){
@@ -211,11 +211,13 @@ function pdf_body($vquien,$sipago){
 		<td><b>Fecha de registro</b></td>
 		<td><b>Monto del pago</b></td>
 		</tr>
+		
 		<tr>
 		<td>'.$sipago.'</td>
 		<td>'.$_POST['fechapago'].'</td>
 		<td>'.$_POST['montopagado'].'</td>
 		</tr>
+	
 
 		<tr>
 		<td><b>Detalle y/o observaciones</b></td>

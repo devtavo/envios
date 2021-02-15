@@ -337,6 +337,7 @@
                                                 <input class="input form-control input-sm" size="38" type="number" step="0.01" name="montopagado" id="montopagado" placeholder="">
                                             </div>
                                         </div>
+                                       
                                     </div>
                                 </div>
                             </div>
