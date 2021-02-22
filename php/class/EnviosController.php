@@ -24,7 +24,7 @@ class EnviosController
 	function create($params){
 		$pg = new MySql();
 		// var_dump($params);
-	   return $pg->getRow("insert into envios(nombres,dni,telefono,direccion,correo,distrito,provincia,departamento,referencia,dequien,estado,pagorealizado,fechapago,montopagado,observaciones,numerotrack,fechaenvio) 
+	   return $pg->getRow("insert into envios(nombres,dni,telefono,direccion,correo,distrito,provincia,departamento,referencia,dequien,estado,pagorealizado,fechapago,montopagado,observaciones,nrotrack,fechaenvio) 
 	   values('".$params->nombrer."',
 	   			'".$params->rucr."',
 				 '".$params->telefonor."',
