@@ -301,6 +301,9 @@
                                                         <option value="5">IDRA Capacitaciones</option>
                                                         <option value="7">Jesus Vera</option>
                                                         <option value="8">Samantha Salazar</option>
+                                                        <option value="9">Rosalina Moya</option>
+                                                        <option value="10">Nadia Espino</option>
+                                                        <option value="11">Jade Perez</option>
                                                 </select>
                                             </div>
                                         </div>
